@@ -183,6 +183,7 @@ input:checked ~ .bubble::after {
 .todo-desc{
 	width: 100vh;
 	flex: 1 0 140px;
+	margin: 5px 0;
 }
 .todo-desc input{
 	font-size: 15px;
