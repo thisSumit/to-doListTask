@@ -170,6 +170,7 @@ input:checked ~ .bubble::after {
 
 .todo-list .todo-item {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	background-color: #DCF2F1;
 	width: 100%;
@@ -180,10 +181,11 @@ input:checked ~ .bubble::after {
 }
 
 .todo-desc{
-	margin-top: 50px;
-	display: flex;
 	width: 100vh;
-	position: absolute;
+	flex: 1 0 140px;
+}
+.todo-desc input{
+	font-size: 15px;
 }
 
 .todo-item label {
@@ -199,6 +201,7 @@ input:checked ~ .bubble::after {
 .todo-item .todo-content input {
 	color: var(--dark);
 	font-size: 18px;
+	font-weight: 600;
 }
 
 .todo-item .actions {
@@ -231,6 +234,7 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
 	text-decoration: 2px line-through;
 	color: var(--grey);
+	font-weight: 100;
 }
 
 .todo-item.done .todo-desc input {
